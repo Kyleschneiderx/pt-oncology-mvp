@@ -31,6 +31,7 @@ const WizardFormFirstPage = props => {
         type="text"
         component={renderField}
         label="Email"
+        autocapitalize="none"
       />
 
       <div>
