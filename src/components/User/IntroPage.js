@@ -22,7 +22,7 @@ class IntroPage extends Component{
                 Lake City PT is committed to wellness and getting you back to life... regaining movement, reclaiming quality of life, while improving your overall health.</p>
                 <img src={family} className="ui fluid rounded image" />
                 <br/>
-                <p>LCPT utilizes A.I. to find the best rehabilitation program based on patients needs and goals.</p>
+                {/* <p>LCPT utilizes A.I. to find the best rehabilitation program based on patients needs and goals.</p> */}
                 <p>Clicking continue below to answer a few questions and start your rehab journey</p>
                 <div style={{ display: "flex", justifyContent: 'flex-end' }}>
                 <Link to='/form'>

@@ -2,9 +2,16 @@ import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import validate from './validate'
 import renderField from './renderField'
-import {renderDatePicker} from './datepicker'
 import DateTimePicker from 'react-widgets/lib/DateTimePicker'
 import { connect } from 'react-redux'
+
+
+
+// import DateTimePicker from 'react-widgets/lib/DateTimePicker'
+
+import 'react-widgets/dist/css/react-widgets.css'
+
+
 
 const renderError = ({ meta: { touched, error } }) =>
   touched && error ? <span>{error}</span> : false
@@ -29,10 +36,16 @@ const WizardFormSecondPage = props => {
         <Field name="phoneNumber" type="text" component={renderField} label="Phone Number"/>
         
         <div className='field'>
-        <label>Date of Birth:</label>
+        {/* <label>Date of Birth:</label> */}
         </div>
 
-        <Field name="DOB"  component={renderDatePicker} label="Date of Birth"/>  
+        {/* <Field name="DOB"  component={renderDatePicker} label="Date of Birth" name="dob"/>   */}
+        <Field
+                  name="dob"
+                  type="date"
+                  component={renderField}
+                  label="Date of Birth"
+                />
 
       <div>
         <br/>
