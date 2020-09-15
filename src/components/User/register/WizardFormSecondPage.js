@@ -41,11 +41,12 @@ const WizardFormSecondPage = props => {
 
         {/* <Field name="DOB"  component={renderDatePicker} label="Date of Birth" name="dob"/>   */}
         <Field
-                  name="dob"
-                  type="date"
-                  component={renderField}
-                  label="Date of Birth"
-                />
+          name="dob"
+          type="date"
+          component={renderField}
+          label="Date of Birth"
+          initialValue={Date.now()}
+          />
 
       <div>
         <br/>
